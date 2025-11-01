@@ -4,7 +4,7 @@ export const products = [
     name: "Apple iMac 27\", 1TB HDD, Retina 5K Display, M3 Max",
     price: 1699,
     discount: "Up to 35% off",
-    rating: 5.0,
+    rating: 3.5,
     reviews: 455,
     image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&h=400&fit=crop&crop=center",
     detailImages: [
