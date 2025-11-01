@@ -2,8 +2,15 @@ import { ListCategories } from "@/components/ListCategories";
 import { PorductsList } from "@/components/ProductsList";
 import { PromotionSection } from "@/components/PromotionSection";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+    const navigate = useNavigate();
+
+    function navigateToProducts() {
+        navigate('/products');
+    }
+
     return (
         <div>
             <div className="w-full flex flex-col items-center">
@@ -28,7 +35,7 @@ function Home() {
                     <PorductsList />
 
                     <div className="w-full flex justify-center mt-5">
-                        <Button className="text-xl h-12">
+                        <Button className="text-xl h-12" onClick={navigateToProducts}>
                             Explore All Products
                         </Button>
                     </div>
