@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { products } from "@/dev-data";
 import { useEffect, useState } from "react";
-import type { Product } from "@/lib/interfaces";
+import type { Product as ProductI } from "@/lib/interfaces";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,7 +14,7 @@ import { Separator } from "@/components/ui/separator";
 
 function Product() {
     const { id } = useParams();
-    const [product, setProduct] = useState<Product>();
+    const [product, setProduct] = useState<ProductI>();
 
 
     useEffect(() => {
